@@ -1,0 +1,31 @@
+Question,Answer
+What is the primary objective of this lecture on full-cycle deep learning?,The lecture aims to discuss the steps involved in a full-cycle deep learning project and how a trained neural network fits into a larger project.
+What are some key aspects involved in building a successful machine learning application?,"Besides training the model, key aspects include data collection, model design, deployment, and ongoing maintenance."
+"In the context of this lecture, what example project is used to illustrate the steps in a machine learning application?",The example project is building a voice-activated device.
+What is the first step in building a machine learning application according to the lecture?,The first step is selecting a problem to solve.
+Why is getting labeled data important in supervised learning?,"Labeled data is needed to train the learning algorithm effectively, especially in supervised learning."
+What is an edge device in the context of deep learning applications?,An edge device is a local device like a smart speaker or smartphone that performs computations close to the user data.
+Why might engineers choose to use a simpler algorithm for Voice Activity Detection (VAD)?,A simpler algorithm can be less computationally intensive and still perform adequately in determining if someone is speaking.
+What is one advantage of deploying models in the cloud as opposed to on edge devices?,Cloud deployment can simplify maintenance and updates since it's easier to push changes to a centralized system.
+What kind of data split is recommended in machine learning projects?,"Data should be split into training, development (dev), and test sets."
+Why is it important to iterate during the model training process?,"Iteration allows for refining the model and correcting issues as they are discovered, leading to better performance over time."
+What is a common problem encountered when deploying machine learning models in new environments?,"The data in new environments might be different from the training data, which can affect model performance."
+Why should domain knowledge be considered when choosing a machine learning project?,Domain knowledge can provide insights that improve the project and help create more meaningful and effective models.
+What was suggested as the first step when collecting data for a machine learning project?,"Initially, spend a short amount of time collecting a small dataset to quickly train and iterate on the model."
+How should machine learning teams document their experiments?,Teams should keep clear notes on experiments and maintain a spreadsheet detailing different parameters and settings tried.
+What is one reason for choosing a non-machine learning approach for some tasks?,"Non-machine learning approaches can sometimes be more robust and simpler to implement, especially if the task can be encoded with straightforward rules."
+What are some domains where edge devices are commonly used?,Edge devices are commonly used in applications like smart speakers and mobile phones for tasks such as voice recognition.
+How can changing environments affect the performance of a machine learning model?,"Changes such as different accents, noise levels, or new types of inputs can cause a model to perform poorly if it wasn't trained on such data."
+What is one benefit of using cloud data for model maintenance?,Using cloud data allows for easier identification of issues and gathering of new training data to retrain and improve the model.
+Why might a learning algorithm become less effective after being deployed for some time?,"The real-world data the model encounters can change over time, causing the model to perform poorly if it wasn't trained on similar data."
+What is one strategy for collecting initial data for a deep learning project?,"Manually collect initial samples quickly, such as recording phrases using a microphone, to begin experimenting and iterating on the model."
+Why is it important to have clear objectives for a deep learning project?,"Clear objectives help guide the project, ensure relevance and feasibility, and increase the chances of project success."
+What did the lecturer suggest is a common issue with initial machine learning models?,Initial machine learning models often don't work as expected and require multiple iterations to improve their performance.
+How can domain knowledge impact the effectiveness of machine learning models?,Domain knowledge can provide unique insights and specialized data that improve the model's relevance and performance in specific tasks.
+What is a potential downside of using a large neural network on an edge device?,"Large neural networks can be too computationally intensive for low-power edge devices, which may not handle the complexity efficiently."
+What is a common initial approach to deploying a simple VAD system?,A common initial approach is to measure if the audio volume exceeds a certain threshold to detect if someone is speaking.
+How can a simple heuristic approach benefit machine learning deployment?,"Simple heuristics can be easier to implement, debug, and maintain, and may generalize better in varying real-world conditions."
+Why should machine learning teams revisit their models periodically after deployment?,"Revisiting models is necessary because real-world data may change, requiring updates or retraining to maintain performance."
+What type of environmental change was used as an example that could impact a self-driving car model?,"Traffic lights in Texas are different in orientation from those in California, affecting the model's ability to generalize."
+What is one reason why a simpler rule like volume threshold might be preferred over a small neural network for VAD?,"A simpler rule may be more robust across different accents and environments, whereas a neural network might overfit to specific conditions."
+Why is continuous monitoring and quality assurance important in machine learning projects?,Continuous monitoring and QA help ensure the model maintains performance standards and adapts to changes in real-world data.

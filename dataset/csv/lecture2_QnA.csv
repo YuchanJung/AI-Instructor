@@ -1,0 +1,31 @@
+Question,Answer
+What is the goal of deep learning intuition as stated in the lecture?,"The goal is to give a systematic way to think about deep learning projects, including data collection, labeling, architecture selection, and designing loss functions."
+"How is machine learning, specifically deep learning, generally modeled?","Machine learning is modeled as a function that takes an input and provides an output, such as classifying an image."
+What defines a model in deep learning?,A model is defined as architecture plus parameters.
+What is a loss function in the context of deep learning?,A loss function compares the output of the model to the ground truth and guides how the parameters should be updated to lower the loss.
+What is logistic regression in the context of neural networks?,"Logistic regression is one of the simplest forms of a neural network, used for binary classification."
+What is a one-hot encoding?,"One-hot encoding is a method where a vector has all zeros and a single one to represent a class, used for classification tasks."
+Why might one use multi-hot encoding instead of one-hot encoding?,"Multi-hot encoding is used to detect multiple classes in the same input, such as detecting multiple animals in one image."
+What are some of the hyperparameters that can be optimized in a neural network?,"Hyperparameters include the learning rate, batch size, and choice of optimizer."
+What is the purpose of the activation function in a neural network?,"An activation function adds non-linearity to the model, enabling it to learn more complex patterns."
+Why is it better to compare human performance when choosing image resolution?,Comparing human performance helps determine the minimum resolution needed to recognize essential features for classification tasks.
+What does a 1.28D vector represent in the context of face verification?,It represents an encoding of the face image that captures essential features used for comparison.
+What is the purpose of adding a small alpha (margin) to a loss function in face verification?,The alpha helps to prevent the function from stabilizing at zero and ensures useful feature learning.
+How does the Gram matrix help in style transfer?,The Gram matrix captures the style by summarizing the feature correlations in the image.
+What training scheme is used for style transfer in art generation?,The scheme involves backpropagating the loss to the pixels of the image instead of the network parameters to modify the image.
+Why are recurrent neural networks (RNNs) suitable for speech recognition tasks?,"RNNs can handle sequential data and learn dependencies over time, which is essential for processing speech."
+What is the primary advantage of programmatic data generation in machine learning?,"Programmatic data generation automates the labeling process and allows for the creation of large datasets, saving time and resources."
+Why is it critical to have a strategic data acquisition pipeline for machine learning projects?,"A strategic pipeline ensures the collection of diverse and high-quality data, which is essential for training effective models."
+What is the role of the Fourier transform in speech recognition tasks?,"The Fourier transform converts 1D speech signals into a spectrogram, capturing frequency information that is useful for the network."
+What is an important consideration when splitting data into training and test sets?,Ensuring a correct balance between classes and the inclusion of complex examples to test the model's generalization.
+What might be a downside of one-hot encoding in complex classification tasks?,"One-hot encoding can't detect multiple classes in one input, leading to a potential loss of information."
+Why is a convolutional neural network (CNN) often preferred for image-related tasks?,CNNs are efficient in capturing spatial hierarchies in images using filters and pooling layers.
+What is a key feature of the logistic loss function in classification tasks?,"The logistic loss function is convex, making it easier to optimize for binary classification problems."
+How does face recognition differ from face verification?,"Face recognition identifies a person from a database, while verification confirms if a given image matches the stored profile."
+Why might starting with white noise be preferred in neural style transfer?,"Starting with white noise allows the image to evolve freely according to the loss function, avoiding initial biases."
+Why is a strategic approach to hyperparameter tuning important?,It ensures efficient optimization and better model performance by systematically exploring the possible settings.
+What is the importance of batch normalization in neural networks?,"Batch normalization reduces internal covariate shifts, accelerating training and improving model stability."
+How can the elbow method help in clustering algorithms?,The elbow method helps determine the optimal number of clusters by finding the point where the within-cluster variance stops decreasing significantly.
+What is a K-Nearest Neighbors (KNN) algorithm used for in the context of face recognition?,KNN is used to identify the closest matches from the database by comparing the encoded vectors.
+Why might including multiple accents be important in a speech dataset?,Including multiple accents ensures the model generalizes well across different speakers and improves accuracy.
+Why is it crucial to compare the model's behavior to human performance?,It provides a benchmark for the model's capabilities and helps identify areas where the model may need improvement.

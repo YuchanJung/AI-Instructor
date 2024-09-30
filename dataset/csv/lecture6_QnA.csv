@@ -1,0 +1,32 @@
+Question,Answer
+What is the main teaching method used in this lecture?,The main teaching method is a 'Choose Your Own Adventure' format where students make decisions on a project scenario.
+Why does the lecturer encourage students to sit with people they don't know well?,Sitting with different people leads to richer discussions and diverse viewpoints.
+What machine learning application example is used in this lecture?,The example discussed is building a speech recognition system to detect the phrase 'Robert turn on' for a smart lamp.
+Why is reading existing literature important at the start of a machine learning project?,Reading existing literature helps quickly level up knowledge and identify promising research directions.
+What is the recommended method for conducting a literature review?,"The lecturer recommends a parallel exploration process, skimming multiple papers to decide which to read in greater detail."
+What is the first practical step in developing the speech recognition system in the example?,The first step is collecting initial data by recording audio clips that include the target phrase 'Robert turn on.'
+How can initial data be collected quickly for the trigger word detection system?,Recording various people saying 'Robert turn on' in different settings or asking strangers to record it.
+What problem can data augmentation address in machine learning?,Data augmentation helps reduce the variance in the learning algorithm by creating more training data.
+When should data augmentation be added to the machine learning workflow?,Data augmentation should be considered after initial evidence of a high variance problem is identified.
+How should you convert a continuous audio problem into a supervised learning problem?,By clipping audio into smaller segments and labeling them based on whether the target phrase is present.
+What is the target label when collecting data for the phrase 'Robert turn on'?,The target label outputs '1' at the moment the phrase is detected and '0' otherwise.
+What is a sign that a machine learning algorithm is overfitting the data?,High accuracy on the training set but low accuracy on the dev set indicates overfitting.
+What should be done if an algorithm shows signs of overfitting?,Consider data augmentation and adding more diverse data to mitigate overfitting.
+How can data augmentation be performed for audio data?,By synthesizing audio by overlaying target phrases on various background noise clips.
+What types of background noises are useful for data augmentation?,"Background noises from homes, train stations, or environments relevant to where the product will be used."
+Why might you prefer recording diverse background noises yourself over downloading clips?,Downloaded clips may be looped and not provide genuine diversity in background noise.
+What are two critical metrics for evaluating a trigger word detection system?,1) How often it correctly identifies the trigger phrase. 2) How often it incorrectly triggers without the phrase.
+How can imbalance in positive and negative examples affect training?,"Severe imbalance can bias the model to favor the majority class, reducing detection accuracy."
+What should you consider when resampling data for training?,Ensure not to throw away too many valuable negative examples when balancing the dataset.
+What is a common workflow in machine learning project development?,"Implement, detect issues, debug, improve based on findings, and repeat until the system performs well."
+How does the lecturer describe building machine learning algorithms?,"It often feels like debugging, where you repeatedly fix one problem to discover and address the next."
+What should be the focus of startup teams working on machine learning projects?,Being very efficient and avoiding delays to develop and iterate on the project quickly.
+Why is it important to maintain high efficiency in machine learning development?,"Increased efficiency can lead to faster progress, potentially doubling the performance improvement rate."
+How can one generate labeled audio data quickly?,By clipping different sections of recorded audio and assigning labels based on the presence of the target phrase.
+What step is critical before contacting the authors of research papers for clarification?,Ensure to first spend some time trying to understand the paper by yourself.
+Why should you start with quick and dirty implementations in machine learning projects?,To rapidly prototype and identify whether the approach is viable before investing more time.
+What mindset should efficient startup teams have regarding project timelines?,Think of saving time not as just reducing delays but significantly accelerating overall progress.
+How does data synthesis help in training a robust machine learning model?,By combining target phrases with various types of background noise to better simulate real-world scenarios.
+What practical advice is given for collecting training data efficiently?,Use multiple recordings in parallel and estimate the time it will take to gather the required data.
+What is the advantage of balancing your dev set in machine learning?,"A balanced dev set ensures that the evaluation metric reflects performance more accurately, avoiding misleading results."
+What is a quick method for making sparse positive examples less sparse?,Change the target labels to be a bunch of ones after the positive event to increase their occurrences.
