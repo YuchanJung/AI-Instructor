@@ -5,19 +5,20 @@
 
 This project focuses on building an **AI Instructor, a Q&A bot**, using transcripts from the **Andrew Ng's Deep Learning course**. It was created specifically for the juniors of the Google ML Bootcamp to provide them with an interactive tool to deepen their understanding of key machine learning concepts. The provided model was created by fine-tuning the **Gemma-2B** model on a custom-generated Q&A dataset derived from the lecture content.
 
-## Table of Contents
+# Table of Contents
 
-- [Project Overview]()
-- [Data Collection]()
-- [Data Preprocessing]()
-- [Generate Q&A Dataset]()
-- [Model Training]()
-  - [Log]()
-- [Reference]()
+- [Project Overview](#Project-Overview)
+- [Detailed Workflow](#Detailed-Workflow)
+  - [Data Collection](#Data-Collection)
+  - [Data Preprocessing](#Data-Preprocessing)
+  - [Generate Q&A Dataset](#Generate-Q&A-Pairs-with-GPT-Assistant)
+  - [Model Training](#Model-Training)
+    - [Log]()
+  - [Reference]()
 
 
 
-## Project Overview
+# Project Overview
 
 1. **Lecture Transcript Collection**: We start by collecting the text data for lectures 1 through 10 from [Stanford CS230: Deep Learning series](https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb) on YouTube. These lecture transcripts provide the foundation for generating our Q&A dataset.
 
@@ -27,7 +28,7 @@ This project focuses on building an **AI Instructor, a Q&A bot**, using transcri
 
 4. **Model Training**: Finally, the generated Q&A pairs are used to train the Gemma 2B model, resulting in the creation of a fully functional AI Instructor capable of answering questions on AI and machine learning topics.
 
-
+# Detailed Workflow
 ## Data Collection
 
 The first step involves extracting the transcript data from YouTube. We crawled the transcripts for lectures 1-10 from the following YouTube playlist. The crawled transcripts are stored as .txt files for further processing.
