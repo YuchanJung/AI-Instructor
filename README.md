@@ -112,7 +112,7 @@ def load_qna_files(data_dir):
 
 | Before (csv) | After (text) |
 | -- | -- |
-| ![image1](https://github.com/user-attachments/assets/46d1e3e4-88dc-455d-8d6d-58144146fa71") | `{"Question: What is a logistic regression model?\nAnswer: It’s a basic machine learning model for classification.", "Question: What does CNN stand for?\nAnswer: Convolutional Neural Network.", "Question: What is a loss function?\nAnswer: A function that measures model performance by comparing predictions to true values."}` |
+| <img width="801" alt="image1" src="https://github.com/user-attachments/assets/9fb5b267-71e7-4505-9a45-883401e16435"> | `{"Question: What is a logistic regression model?\nAnswer: It’s a basic machine learning model for classification.", "Question: What does CNN stand for?\nAnswer: Convolutional Neural Network.", "Question: What is a loss function?\nAnswer: A function that measures model performance by comparing predictions to true values."}` |
 
 
 ### Tokenization
