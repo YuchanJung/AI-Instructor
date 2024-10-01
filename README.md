@@ -11,7 +11,6 @@ This project focuses on building an **AI Instructor, a Q&A bot**, using transcri
 - [Detailed Workflow](#Detailed-Workflow)
   - [Data Collection](#Data-Collection)
   - [Data Preprocessing](#Data-Preprocessing)
-  - [Generate Q&A Dataset](#Generate-Q&A-Pairs-with-GPT-Assistant)
   - [Model Training](#Model-Training)
     - [Log]()
   - [Reference]()
@@ -43,7 +42,7 @@ Once the raw transcripts are gathered, we clean and process them to remove noise
 We also divide the cleaned transcripts into chunks, which are later used to feed into the GPT assistants for Q&A generation. Each lecture transcript is split into 5 chunks to ensure that the assistant receives manageable portions of data for processing.
 
 
-## Generate Q&A Pairs with GPT Assistant
+### Generate Q&A Pairs with GPT Assistant
 
 After cleaning and chunking the data, we leverage GPT-based assistants to generate a dataset of 30 Q&A pairs from the lecture content. The assistant receives the transcript chunks sequentially, acknowledges understanding, and then creates Q&A pairs focusing on core concepts in AI, relevant mathematics, and practical applications.
 
