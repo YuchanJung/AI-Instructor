@@ -84,3 +84,43 @@ The generated Q&A pairs are saved as a CSV file for easy access and further use 
 ## Model Training
 
 Once the dataset is ready, we utilize it to fine-tune the Gemma 2B model. This allows the Q&A bot (AI Instructor) to respond to user questions about machine learning, based on the content from the lectures.
+
+
+
+## Pre-processing
+
+### Load and Setup the model
+The model and tokenizer used for fine-tuning are loaded from the Hugging Face model hub. In this example, the model is google/gemma-2-2b, a large causal language model. 
+
+
+### Transforming Q&A pair to LLM input
+```python
+def load_qna_files(data_dir):
+    files = [os.path.join(data_dir, f) for f in os.listdir(data_dir) if f.endswith('.csv')]
+    data = []
+    for file in files:
+        dataset = pd.read_csv(file)
+        print(f'Sample data of {file}')
+        print(dataset.head(5))
+        for index, row in dataset.iterrows():
+            data.append(f"Question: {row['Question']}\nAnswer: {row['Answer']}")
+    return data
+```
+ Each file contains a Q&A format, and the data is processed into the appropriate format for language modeling. Specifically, each row in the dataset is converted into a string with the format: `"Question: [Question]\nAnswer: [Answer]".`
+
+**Example**: 
+
+| Before (csv) | After (text) |
+| -- | -- |
+| ![image1](https://github.com/user-attachments/assets/46d1e3e4-88dc-455d-8d6d-58144146fa71") | `{"Question: What is a logistic regression model?\nAnswer: It’s a basic machine learning model for classification.", "Question: What does CNN stand for?\nAnswer: Convolutional Neural Network.", "Question: What is a loss function?\nAnswer: A function that measures model performance by comparing predictions to true values."}` |
+
+
+### Tokenization
+Tokenization is the process of converting raw text into tokens that the model can understand. In this case, the AutoTokenizer from Hugging Face is used to handle the tokenization process. The tokenizer breaks down text (questions and answers) into smaller units called tokens, which can be either words, subwords, or even characters, depending on the model and tokenizer configuration.
+
+The model used here is a causal language model, which typically uses a byte-pair encoding (BPE) tokenizer. This means that common words may remain whole, while rare words are split into subword units.
+
+| Before (text) | After (token) | 
+| -- | -- |
+| `Question: What is a logistic regression model?\nAnswer: It’s a basic machine learning model for classification.` | `{'input_ids': [0, 2, 9413, 235292, 2439, 603, 573, 6045, 576, 15155, 235284, 235304, 235276, 235336, 108, 1261, 235292, 15155, 235284, 235304, 235276, 31381, 611, 5271, 6044, 578, 11572, 8557, 235265], 'attention_mask': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }` |
+
