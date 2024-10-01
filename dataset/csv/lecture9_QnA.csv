@@ -1,0 +1,61 @@
+Question,Answer
+What are the two main fields of AI discussed in Lecture 9?,Deep Learning and Reinforcement Learning.
+Why are deep neural networks described as good function approximators?,Because they can approximate a function given data.
+What is the setting where deep learning methods cannot solve problems alone?,Reinforcement Learning applications.
+What is Deep Q-Learning?,An algorithm that combines Q-Learning with deep learning.
+"Why do we need techniques like Xavier initialization, dropout, and batch normalization?",To help deep neural networks train effectively.
+What is AlphaGo and why is it significant?,"Google DeepMind's AlphaGo, which beat world champions in the game of Go using deep reinforcement learning."
+"In Go, what is the goal of the game?",To maximize your territory by surrounding your opponent with stones.
+What makes the board game Go more complex than chess?,The board is larger (19x19) and requires long-term strategy.
+What is a major challenge in traditional supervised learning methods when applied to the game of Go?,It is hard to represent the probability of winning from a given board state.
+Why are sequences of decisions important in reinforcement learning?,"Because the decisions are correlated, requiring planning ahead."
+What is the key difference between RL and classic supervised learning in terms of label availability?,"RL often involves delayed labels, making it hard to use immediate feedback for learning."
+What is a Q-Table in the context of Q-Learning?,A matrix storing scores for actions in every state.
+What does the Bellman Equation represent in Q-Learning?,"The optimal Q-function satisfies the Bellman equation, combining immediate reward and discounted future rewards."
+How does the concept of discounted return help in decision-making over long-term rewards?,"It reduces future rewards' impact over time, making the return converge."
+What's a policy in reinforcement learning?,A policy is a strategy that defines the best action to take in a given state.
+Why is it impractical to use Q-Tables in complex environments like the game of Go?,Because of the massive number of possible states and actions (10^170 states in Go).
+How does deep learning address the limitations of using Q-Tables?,It serves as a function approximator to predict Q-values based on the state.
+What is experience replay and why is it useful in reinforcement learning?,"Experience replay stores state transitions to be re-used multiple times during training, increasing data efficiency and reducing correlation."
+Why is exploration important in reinforcement learning?,It helps discover new strategies that may lead to better rewards than existing known paths.
+What is epsilon-greedy strategy in reinforcement learning?,A method that balances exploration and exploitation by randomly choosing an action with probability epsilon.
+What is meant by 'intrinsic reward' in the context of reinforcement learning?,A reward based on exploring less-visited states to encourage curiosity and exploration.
+How does the algorithm in AlphaGo combine tree search with deep learning?,It uses a value network to estimate win probabilities and a policy network to suggest actions.
+What is Montezuma’s Revenge and why is it challenging for reinforcement learning algorithms?,"A game requiring long sequences of correct actions, making it hard to solve with sparse rewards."
+"In policy gradient methods, what is the primary objective?",To directly optimize the policy mapping states to actions.
+What is the key advantage of meta learning in reinforcement learning?,It allows quick adaptation to new tasks with few gradient updates.
+What is the purpose of imitation learning in reinforcement learning?,To mimic the behavior of a human expert when it is hard to define explicit rewards.
+What are the key principles involved in deep reinforcement learning?,Combining deep learning (function approximation) with reinforcement learning (sequential decision-making).
+How does the concept of terminal state affect the Q-Learning algorithm?,"When a terminal state is reached, the episode ends and no further future rewards are considered."
+Why is preprocessing important in games like Breakout for deep reinforcement learning?,"Preprocessing reduces the input size (e.g., grayscaling, cropping) and provides history (e.g., sequence of frames) for better decision-making."
+What role does stochastic gradient descent play in training deep Q-Networks?,It updates the neural network parameters by minimizing the loss between the predicted Q-values and the target values.
+What is Q-learning?,Q-learning is a reinforcement learning algorithm for decision making.
+What does a Q-table store?,It stores action values for each state to guide decision-making.
+What is the Bellman equation used for?,It defines the optimal policy in Q-learning.
+What is the role of the discount factor?,It balances immediate and future rewards.
+What is reinforcement learning?,It's learning to make decisions through trial and error.
+Why is Q-learning useful in games?,It helps agents learn strategies for complex games.
+What is an agent in RL?,An agent makes decisions to maximize rewards.
+What is the environment in RL?,The environment provides feedback to the agent's actions.
+What are states in RL?,States represent the current situation in the environment.
+What are actions in RL?,Actions are the choices the agent can make in each state.
+What is the reward in RL?,Rewards are feedback given to the agent after each action.
+Why use deep learning in RL?,Deep learning helps approximate complex Q-functions.
+What is the role of experience replay?,It stores experiences to improve training stability.
+Why is exploration important in RL?,Exploration helps discover better strategies.
+What is exploitation in RL?,Exploitation is using known strategies to maximize rewards.
+What is the epsilon-greedy method?,It's a balance between exploration and exploitation.
+What is AlphaGo?,A system using deep RL to master the game of Go.
+What does a policy do in RL?,It defines the agent's action choice in each state.
+What is delayed reward?,A reward that is not immediate but earned over time.
+What is a terminal state?,A state where the episode or game ends.
+Why are games used in RL research?,Games provide clear rewards and complex decision making.
+What are Atari games used for in RL?,They test how well agents learn in visual environments.
+What is Montezuma's Revenge?,A hard game used to challenge deep RL exploration.
+Why use deep Q-networks?,To approximate Q-values for large state spaces.
+What is policy optimization?,It directly optimizes the agent's action policy.
+Why is reward sparsity a challenge?,Sparse rewards make it hard for agents to learn.
+What is a value network?,It predicts the value of a state for long-term success.
+What is a replay buffer?,A buffer that stores past experiences for training.
+Why is convergence important in RL?,Convergence ensures that the learning stabilizes.
+What is the target in Q-learning?,The target is the best long-term discounted reward.

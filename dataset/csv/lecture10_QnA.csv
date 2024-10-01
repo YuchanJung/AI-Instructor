@@ -1,0 +1,61 @@
+Question,Answer
+What does the acronym RNN stand for?,Recurrent Neural Network.
+Why might convolutional networks work better than recurrent neural networks in some cases?,Because they can detect intent by scanning small number of words within the input sequence with trained filters.
+What is the purpose of slots in conversational assistants?,"Slots gather multiple information from the user on a specific intent, such as class code, quarter, and year for course enrollment."
+What are the two intents defined for the chatbot in the lecture?,The intents are finding information about a course and enrolling in a class.
+How can one train a model to detect user intent?,"By labeling the dataset with pairs of user utterances and their corresponding intent, then using either a recurrent neural network or a convolutional neural network."
+What is joint training in the context of conversational assistants?,Training one network on both the task of detecting user intent and tagging slots using two different loss functions.
+Why might reinforcement learning be used in building a chatbot?,"To learn a policy for the chatbot, allowing it to decide on the next action based on the current state and context."
+What is the significance of memory networks in managing context in chatbots?,"They save all history utterances, allowing the chatbot to compare current input with past conversations to maintain context."
+Explain how synthetic datasets can be generated for chatbots.,"By using known databases of dates, courses, etc., and inserting these into predefined templates to generate varied training utterances."
+How would you evaluate the performance of a chatbot?,"Using metrics like precision, recall, and F1 score for components, and user feedback or Mean Opinion Scores for overall evaluation."
+What does the term 'slots tagging' refer to in chatbot development?,Identifying and tagging keywords in user utterances that correspond to different necessary pieces of information.
+What is the benefit of using an attention-based model in a chatbot?,It helps the chatbot focus on relevant parts of past interactions to better understand and respond to the current user input.
+What additional components are needed to make a text-based chatbot vocal?,A speech-to-text system to convert voice input into text and a text-to-speech system to convert text responses back into voice.
+What are mechanical Turk services often used for in AI projects?,For manual data collection and annotation to help build and refine training datasets.
+What is the significance of the 'B/I/O' tagging system in slot tagging?,"It denotes the boundary of each slot (Begin, Inside, Outside), helping in correctly identifying multi-word slots."
+How does reinforcement learning contribute to goal-oriented chatbots?,It helps the chatbot learn to make decisions that maximize a reward over the long term conversation.
+What might be a practical application of AI in healthcare as discussed in the lecture?,An app where you can upload an X-ray photo and receive an AI-suggested diagnosis.
+What are some papers recommended in the lecture for further study on AI for speech?,"""Deep Speech 2"", ""Tacotron 2"", and ""WaveNet""."
+What can be the output of an RNN-based intent classifier in a chatbot?,"A specific class indicating the user's intent, such as 'enroll' or 'inform'."
+What two architectures are suggested for sequence intent classifiers?,Recurrent Neural Networks (RNNs) and Convolutional Neural Networks (CNNs).
+How can joint training benefit natural language processing in chatbots?,"It allows shared features to be learned in early layers, improving performance by jointly optimizing for intent detection and slot tagging."
+What is the role of Exploratorycourses in the chatbot discussed?,It serves as the API to retrieve information about classes when queried by the chatbot.
+What is one challenge of multi-turn conversations for chatbots?,Tracking context across multiple user utterances.
+What example is given for a simple conversational assistant?,A chatbot to help students find or enroll in courses.
+Why is manual annotation important even if automatic methods are used to generate data?,To ensure the model does not overfit to a specific type of generated utterance and can generalize better.
+Why did the instructor mention using Amazon Mechanical Turk in chatbot development?,For collecting and hand-labeling a large dataset efficiently.
+"In the provided example, what does 'CS106A' signify?",It is the code of a class a student might want to enroll in.
+What is one use case of a knowledge graph in chatbots as described?,To manage multiple intents and slots dynamically by following connections in the knowledge graph.
+What is meant by 'sequence generation' in the context of this lecture?,The ability of a model to generate coherent responses in natural language.
+How do context management systems enhance chatbot performance?,By retaining and utilizing previous interactions to inform future responses.
+What are two key intents for a chatbot?,The intents are 'enroll' and 'find info'.
+What is an utterance in chatbot terms?,An utterance is a user or chatbot input message.
+What is slot filling in chatbots?,Slot filling gathers needed information like course and year.
+What is a multi-turn conversation?,A conversation with multiple exchanges between user and bot.
+Why use RNNs for chatbots?,RNNs handle sequences of text in natural language.
+What is reinforcement learning used for in chatbots?,To learn policies for choosing chatbot responses.
+What is a knowledge base in chatbots?,It stores facts and information to assist users.
+What is joint training in chatbots?,Training intent detection and slot filling together.
+What are the two slots for course enrollment?,The course and the quarter.
+How can chatbots use APIs?,APIs like Axess retrieve or enroll course information.
+What is a memory network?,It stores previous utterances for context in conversations.
+What is context management?,Handling multi-turn conversations by remembering past inputs.
+What is a sequence-to-sequence model?,"It maps input sequences to output sequences, useful for chatbots."
+Why use convolutional networks in chatbots?,They detect key phrases in user inputs.
+What is slot tagging?,It labels parts of the input relevant for completing an action.
+Why use Mechanical Turk for chatbot data?,To collect and label large amounts of conversation data.
+What is a single-turn conversation?,A conversation with one question and one answer.
+What is a knowledge graph?,A structure linking items and attributes for chatbot queries.
+What does a chatbot do if slots are missing?,It asks follow-up questions to fill the slots.
+How can chatbots generate language?,Through natural language generation techniques.
+Why use a softmax function in chatbots?,To classify user intents based on probabilities.
+What is the purpose of speech-to-text?,It converts spoken language to text for the chatbot.
+What is the role of a text-to-speech system?,It converts chatbot text responses into spoken language.
+What is API integration in chatbots?,Using external services like course databases for responses.
+What is data augmentation?,Generating additional training data by modifying existing data.
+How are chatbots evaluated?,"By metrics like precision, recall, and user feedback."
+What is a multi-class classification problem?,Classifying inputs into one of many possible categories.
+What are two chatbot response evaluation methods?,Human ratings and Mean Opinion Scores.
+What is context tracking in chatbots?,Tracking previous interactions to maintain conversation flow.
+What is user intent detection?,Identifying the goal or request behind user input.

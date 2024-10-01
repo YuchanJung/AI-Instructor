@@ -1,0 +1,61 @@
+Question,Answer
+What are the levels of questions that AI can answer in healthcare?,"Descriptive, diagnostic, predictive, and prescriptive."
+What is the function of a 1D convolutional neural network in ECG signal analysis?,It runs over the time dimension of the input to detect features for classifying heart rhythms.
+What is the significance of using a ResNet architecture in deep learning models?,"ResNet allows for the training of very deep networks by adding shortcut connections, minimizing the error distance to each layer."
+Why is automation in healthcare with deep learning significant?,"Automation allows for continuous monitoring and can catch misdiagnoses, providing more accurate diagnoses at higher speeds."
+How does a DenseNet architecture differ from a ResNet?,"DenseNet connects every layer to every other layer, reducing the number of parameters and typically outperforming ResNet."
+What model interpretation technique is mentioned for understanding neural network predictions?,"Class activation maps, which highlight the areas of an image most indicative of a particular diagnosis."
+Why is it important to have C images in the training set for a machine learning model in healthcare?,To ensure the model can generalize well and perform accurately on data from the latest equipment that will be widely used.
+What data augmentation methods can be used for medical imaging datasets?,"Rotation, zoom, blur, translation, and adding noise."
+In what case might data augmentation hurt the performance of a model?,"In character recognition, augmentation like flipping can result in mislabeling similar characters such as 'b' and 'd'."
+What is the relationship between nx and ny for an RGB image input and a segmentation mask output?,"nx = 3 * ny, where nx is for the RGB image and ny is for the segmentation mask."
+What is the importance of using the binary cross-entropy loss in segmentation tasks?,"It measures the loss for each pixel, ensuring the model accurately categorizes each part of the image."
+"When using transfer learning, what are the critical hyperparameters to tune?","The number of pre-trained layers (L), the number of new layers added (L_0), and the number of layers to freeze (L_f)."
+What is the advantage of using bounding boxes over segmentation?,Bounding boxes are faster and easier to compute but less precise compared to segmentation.
+How can you modify a dataset to better define cell boundaries in segmentation tasks?,"Label each pixel as cell, no cell, or boundary using softmax activation and adjust the loss function to penalize boundary misclassification."
+How can gradients help in explaining a model's prediction in a classification task?,"By calculating the derivative of the output with respect to the input, showing which input pixels most influence the output."
+Can a model trained on doctor-labeled data outperform the doctors? Explain.,"Yes, if the dataset was labeled by a committee of doctors, the model can average out individual errors, potentially outperforming a single doctor."
+What is the importance of external validation for a machine learning model?,It tests the model's generalizability and performance on data from different sources or distributions.
+What is one potential pitfall of automation bias in healthcare AI models?,"Experts might start relying too much on the model's decisions, potentially ignoring critical aspects of patient care."
+Why is preprocessing important when using multiple datasets from different sources?,To ensure consistent data distribution and improve the model's performance on unseen data from various distributions.
+How does AI in healthcare benefit global health diagnostics?,"It increases access to medical imaging expertise, especially in low-resource settings, improving diagnostic accuracy and healthcare delivery."
+What is the significance of a model's ability to generalize to populations beyond its training data?,"It ensures the model's robustness and reliability, performing well on diverse datasets from different institutions or countries."
+What role does a logistic regression play in a multi-view pathology detection model?,It combines the probabilities from different convolutional networks to produce a final prediction for each pathology.
+How can combining AI models with expert knowledge improve diagnostic accuracy?,"AI models can highlight potential issues, while experts provide contextual understanding, leading to more accurate and reliable diagnoses."
+What is one challenge of dealing with massive amounts of healthcare data like ECG signals?,"The vast volume of data makes manual review impractical, requiring automated interpretation to detect anomalies efficiently."
+Why is it essential to continually monitor patients using deep learning models?,"Continuous monitoring can help detect changes or risks that periodic checkups might miss, leading to timely interventions."
+What is one downside of modular AI systems compared to end-to-end systems?,Modular systems can have multiple points of failure and may require more complex troubleshooting and integration efforts.
+How can human anatomy's subtle differences pose challenges in developing AI models?,"Minor variations in anatomy, like subtle differences in heart rhythms, require highly sensitive models to accurately detect issues."
+What is the potential application of AI in reducing healthcare professionals' workload?,"AI can automate routine and repetitive tasks, such as reading scans, allowing healthcare professionals to focus on more complex cases."
+What is the importance of class activation maps in healthcare AI?,"They help interpret the model's focus areas in the input image, providing insights into the model's decision-making process."
+How does deep learning facilitate feature extraction in medical imaging?,"Deep learning models automatically extract relevant features from raw data, eliminating the need for manual feature engineering."
+What is an ECG used for?,To measure heart's electrical activity and detect arrhythmias.
+What is arrhythmia?,It is an irregular heart rhythm that can be detected via ECG.
+What is the Zio Patch?,A device for continuous ECG monitoring for up to two weeks.
+What is the purpose of AI in healthcare?,"To assist with diagnosis, treatment planning, and monitoring."
+What problem does AI solve in ECG monitoring?,It helps automate the analysis of large ECG datasets.
+What are prescriptive problems in healthcare AI?,These are problems about what action to take based on diagnosis.
+How is AI used in medical imaging?,AI can detect diseases like pneumonia and tumors in X-rays.
+What is a convolutional neural network (CNN)?,A deep learning model used for analyzing visual data.
+What is deep learning's role in feature extraction?,It combines feature extraction and classification in one step.
+What is pneumonia?,A lung infection that appears as a cloudy area in X-rays.
+How does AI assist radiologists?,It helps prioritize cases and highlight abnormalities in images.
+What is the F1 score?,A metric that balances precision and recall in model evaluation.
+What is the role of a cardiologist in AI research?,They validate AI's diagnostic accuracy against human expertise.
+What is AI's potential in ECG monitoring?,AI can monitor heart rhythms continuously and detect issues early.
+What is ResNet?,A deep learning model using shortcut connections to improve training.
+What is a Holter monitor?,A device for continuous heart monitoring over 24-48 hours.
+What is AI's advantage in arrhythmia detection?,AI can analyze large amounts of ECG data faster than doctors.
+What is class activation mapping?,A method to visualize which parts of an image a model focuses on.
+What data is needed for pneumonia detection?,Chest X-rays are used to detect pneumonia via AI.
+What is a test set?,A dataset used to evaluate a model's performance after training.
+How are AI models validated in healthcare?,They are compared to expert performance and validated with test data.
+What is medical imaging?,Techniques like X-rays and MRIs used to visualize body parts.
+How are chest X-rays used in AI?,AI models detect pneumonia and other diseases from X-rays.
+What is transfer learning?,Using a pre-trained model on a new task with similar data.
+What is the NIH X-ray dataset?,"A large dataset with 100,000 chest X-rays used for AI training."
+What is the purpose of feature engineering?,To extract meaningful features from data for model training.
+How does AI help with ECG monitoring?,AI automates the detection of abnormal heart rhythms.
+What is overfitting?,When a model performs well on training data but poorly on new data.
+What is model generalization?,A model's ability to perform well on unseen data.
+What is the goal of AI in healthcare?,"To improve diagnostics, reduce errors, and increase accessibility."

@@ -1,0 +1,60 @@
+Question,Answer
+What are some types of layers discussed in convolutional neural networks?,"Pooling, max pooling, average pooling, and convolutional layers."
+Which advanced application techniques involve YOLO and R-CNN?,"Object detection with YOLO, Fast R-CNN, and Faster R-CNN."
+What is the main purpose of using saliency maps in neural networks?,To understand the decision process of the network by mapping back the output decision to the input space.
+How can the score for a specific class be backpropagated to the input?,By taking the derivative of the score of the class and backpropagating it to the input.
+Why is it recommended to use the pre-softmax score instead of the post-softmax score for backpropagation?,To avoid minimizing scores of other classes and to focus on maximizing the correct class score.
+What is occlusion sensitivity and how is it applied?,Occlusion sensitivity tests how the classification confidence changes with parts of the input image occluded by a gray square.
+What information does a saliency map provide?,It shows which pixels are most influential in the network's decision-making process.
+What is global average pooling and its purpose?,It averages each feature map into one number to form a vector before the classification layer.
+What structural change occurs in a CNN when applying global average pooling?,Flattening the output volume to average values across each feature map.
+How do class activation maps help in understanding network localization?,By showing how much each feature map contributes to the output score and up-sampling it to fit the input image size.
+Why are class activation maps dependent on the class label?,"Different class labels produce different weightings of the feature maps, affecting the final visualization."
+What visual information can you obtain from class model visualization using gradient ascent?,"An image that maximizes the neural network's output for a specific class, showing what the network 'sees' for that class."
+What is dataset search in neural network research?,Forward propagating many images through the network to find which images highly activate a particular feature map.
+How can dataset search help identify a feature map’s function?,By observing which images or parts of images most strongly activate the feature map.
+What is deconvolution in the context of neural networks?,The process of up-sampling the encoded information from a smaller volume back to the size of the input image.
+Why is assuming an orthogonal matrix useful in deconvolution?,It allows for using the transpose of the convolution weights as a simple approximation for deconvolution.
+How can deconvolution reveal what specific activations detect?,"By reversing pooling, ReLU operations, and convolution to reconstruct the portion of the image that caused the activation."
+How is unpooling approximated in neural networks?,By using switches to remember which positions had the maximum values during max pooling.
+Why does global average pooling not lose spatial information as expected?,Because the feature maps are still referenced to their original positions before averaging out.
+What visualization technique explains why the network makes specific predictions?,Class activation maps.
+What is the purpose of Deep Dream in neural network visualizations?,"Creating enhanced input images that maximize certain activations in the network, often leading to surreal visuals."
+How does ReLU function in the backward pass during backpropagation?,It passes gradients back unchanged for inputs that were positive and zeroes out gradients for inputs that were negative.
+How does occlusion sensitivity visually demonstrate the network's focus?,By showing a probability map of the affected area when parts of the input image are occluded with a gray square.
+Why is it important to visualize neural network activations?,To validate that the network is focusing on relevant features and to build trust in model predictions.
+How can activation maximization help validate neural network predictions?,"By showing which input patterns lead to high activations for specific classes, ensuring the network learns meaningful features."
+What can be inferred from consistently dark feature maps in visualization tools?,It could indicate dead neurons that are not contributing to the network’s output.
+What benefit does dataset search provide to network interpretability?,"It identifies what type of input data maximally activates certain network filters, hinting at their learned features."
+What kind of content do Deep Dream images produce to increase activations?,"Patterns and objects recognized by the network, leading to enhanced activation and visualization."
+How is Deep Dream different from class model visualization using gradient ascent?,Deep Dream amplifies existing features in the image by setting gradients to current activations and iteratively updating the input.
+What is a saliency map in neural networks?,It shows input pixels most influencing the output.
+What is occlusion sensitivity?,It tests network confidence by occluding parts of the image.
+What are class activation maps?,They highlight image regions most relevant to a network's decision.
+What is a softmax layer?,A layer that converts scores into probabilities summing to one.
+What does backpropagation compute?,It computes gradients to update the network's weights.
+What is the goal of occlusion sensitivity?,To identify regions important to the network’s classification.
+How is a gradient map used?,It shows which parts of an input impact the output score.
+What is deconvolution used for?,To reconstruct input features from intermediate layers.
+What are feature maps?,They are activations from convolutional layers.
+What is global average pooling?,It reduces spatial dimensions by averaging over feature maps.
+What are intermediate layers in CNN?,Layers between input and output that capture features.
+What is gradient ascent?,It iteratively updates input to maximize an output score.
+How does class activation map help?,It shows where the network focuses when predicting a class.
+What is YOLO trained on?,"YOLO is first trained on classification, then on detection data."
+What is a pre-softmax score?,It's the raw score before applying softmax to get probabilities.
+What does occlusion sensitivity detect?,It detects network sensitivity to occluded input parts.
+What does global average pooling replace?,It replaces fully connected layers to preserve spatial data.
+What is a gradient map?,A visual representation of how each input pixel affects output.
+How does max pooling work?,It downsamples input by selecting maximum values over regions.
+What does saliency map highlight?,It highlights pixels critical for the network's decision.
+How does deconvolution help?,It reverses convolution to understand what activates neurons.
+What is the purpose of ReLU?,"ReLU adds non-linearity by keeping positive values, zeroing others."
+What is a CNN filter?,A small matrix used to detect patterns like edges in images.
+What does occlusion sensitivity show?,It shows how the network’s confidence changes with occlusions.
+What is Deep Dream?,A technique to generate creative images using neural networks.
+What is upsampling?,Increasing the spatial resolution of feature maps.
+What is feature visualization?,It visualizes the features that maximally activate neurons.
+What is dataset search?,It identifies data points that maximize a specific activation.
+What is backpropagation in saliency maps?,It calculates the gradient of an output with respect to input.
+What are filters in CNN?,They detect patterns in input data by convolution.
