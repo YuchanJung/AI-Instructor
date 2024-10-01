@@ -81,14 +81,6 @@ Format the response strictly in JSON, using the following structure:
 
 The generated Q&A pairs are saved as a CSV file for easy access and further use in model training. Each row in the CSV contains a question and its corresponding answer.
 
-## Model Training
-
-Once the dataset is ready, we utilize it to fine-tune the Gemma 2B model. This allows the Q&A bot (AI Instructor) to respond to user questions about machine learning, based on the content from the lectures.
-
-
-
-## Pre-processing
-
 ### Load and Setup the model
 The model and tokenizer used for fine-tuning are loaded from the Hugging Face model hub. In this example, the model is google/gemma-2-2b, a large causal language model. 
 
@@ -123,4 +115,12 @@ The model used here is a causal language model, which typically uses a byte-pair
 | Before (text) | After (token) | 
 | -- | -- |
 | `Question: What is a logistic regression model?\nAnswer: It’s a basic machine learning model for classification.` | `{'input_ids': [0, 2, 9413, 235292, 2439, 603, 573, 6045, 576, 15155, 235284, 235304, 235276, 235336, 108, 1261, 235292, 15155, 235284, 235304, 235276, 31381, 611, 5271, 6044, 578, 11572, 8557, 235265], 'attention_mask': [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }` |
+
+
+
+## Model Training
+
+Once the dataset is ready, we utilize it to fine-tune the Gemma 2B model. This allows the Q&A bot (AI Instructor) to respond to user questions about machine learning, based on the content from the lectures.
+
+
 
