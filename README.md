@@ -13,7 +13,8 @@ This project focuses on building an **AI Instructor, a Q&A bot**, using transcri
   - [Data Preprocessing](#Data-Preprocessing)
   - [Model Training](#Model-Training)
     - [Log]()
-  - [Reference]()
+- [Results](#Results)
+- [Reference]()
 
 
 
@@ -120,6 +121,47 @@ The model used here is a causal language model, which typically uses a byte-pair
 ## Model Training
 
 Once the dataset is ready, we utilize it to fine-tune the Gemma 2B model. This allows the Q&A bot (AI Instructor) to respond to user questions about machine learning, based on the content from the lectures.
+
+**Training procedure**
+```python
+def fine_tune_model(model, dataset, tokenizer, output_dir="./results", epochs=3):
+    training_args = TrainingArguments(
+        output_dir=output_dir,
+        overwrite_output_dir=True,
+        num_train_epochs=epochs,
+        per_device_train_batch_size=1,
+        save_steps=500,
+        save_total_limit=2,
+        logging_steps=100,
+        learning_rate=5e-5,
+    )
+    
+    trainer = SFTTrainer(
+        model=model,
+        args=training_args,
+        train_dataset=dataset,
+        data_collator=data_collator
+    )
+    
+    trainer.train()
+    model.save_pretrained(output_dir)
+    tokenizer.save_pretrained(output_dir)
+    print(f"Model saved to {output_dir}")
+
+fine_tune_model(model, dataset, tokenizer, output_dir, epochs=3)
+```
+
+## Results
+
+**Optimization Log**
+![training_loss](https://github.com/user-attachments/assets/072ac5eb-d953-4797-a5c0-691374e812b4)
+
+**Sample Question** 
+1. Before Training
+
+2. After Training
+![Screenshot 2024-10-03 at 9 47 24 PM](https://github.com/user-attachments/assets/1c43f7cb-deeb-4b54-b555-60141a4e6bdd)
+
 
 
 
