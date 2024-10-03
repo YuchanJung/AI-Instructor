@@ -13,18 +13,9 @@ This project focuses on building an **AI Instructor, a Q&A bot**, using transcri
 - [Detailed Workflow](#detailed-workflow)
   - [Data Collection](#data-collection)
   - [Data Preprocessing](#data-preprocessing)
-    - [Generate Q\&A Pairs with GPT Assistant](#generate-qa-pairs-with-gpt-assistant)
-    - [Load and Setup the model](#load-and-setup-the-model)
-    - [Transforming Q\&A pair to LLM input](#transforming-qa-pair-to-llm-input)
-    - [Tokenization](#tokenization)
   - [Model Training](#model-training)
-    - [Training Process Overview](#training-process-overview)
-    - [Code](#code)
   - [Results](#results)
-    - [Optimization Log](#optimization-log)
   - [Model Performance Before and After Fine-Tuning](#model-performance-before-and-after-fine-tuning)
-    - [1. Question: ***Why do we use CNN?***](#1-question-why-do-we-use-cnn)
-    - [2. Question: ***What is Reinforcement Learning?***](#2-question-what-is-reinforcement-learning)
 
 
 
