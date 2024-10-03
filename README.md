@@ -7,14 +7,24 @@ This project focuses on building an **AI Instructor, a Q&A bot**, using transcri
 
 # Table of Contents
 
-- [Project Overview](#Project-Overview)
-- [Detailed Workflow](#Detailed-Workflow)
-  - [Data Collection](#Data-Collection)
-  - [Data Preprocessing](#Data-Preprocessing)
-  - [Model Training](#Model-Training)
-    - [Log]()
-- [Results](#Results)
-- [Reference]()
+- [AI Instructor](#ai-instructor)
+- [Table of Contents](#table-of-contents)
+- [Project Overview](#project-overview)
+- [Detailed Workflow](#detailed-workflow)
+  - [Data Collection](#data-collection)
+  - [Data Preprocessing](#data-preprocessing)
+    - [Generate Q\&A Pairs with GPT Assistant](#generate-qa-pairs-with-gpt-assistant)
+    - [Load and Setup the model](#load-and-setup-the-model)
+    - [Transforming Q\&A pair to LLM input](#transforming-qa-pair-to-llm-input)
+    - [Tokenization](#tokenization)
+  - [Model Training](#model-training)
+    - [Training Process Overview](#training-process-overview)
+    - [Code](#code)
+  - [Results](#results)
+    - [Optimization Log](#optimization-log)
+  - [Model Performance Before and After Fine-Tuning](#model-performance-before-and-after-fine-tuning)
+    - [1. Question: ***Why do we use CNN?***](#1-question-why-do-we-use-cnn)
+    - [2. Question: ***What is Reinforcement Learning?***](#2-question-what-is-reinforcement-learning)
 
 
 
@@ -120,9 +130,18 @@ The model used here is a causal language model, which typically uses a byte-pair
 
 ## Model Training
 
-Once the dataset is ready, we utilize it to fine-tune the Gemma 2B model. This allows the Q&A bot (AI Instructor) to respond to user questions about machine learning, based on the content from the lectures.
+Once the dataset is ready, we utilize it to fine-tune the `Gemma-2B model`. This allows the Q&A bot (AI Instructor) to respond to user questions about machine learning, based on the content from the lectures.
 
-**Training procedure**
+### Training Process Overview
+
+The fine-tuning process was performed on the `Gemma-2B model` using Hugging Face's Trainer API. The model was trained for `3 epochs`, with the batch size set to 1 for a more focused training on individual Q&A pairs. The training arguments included:
+- **Output Directory**: All model checkpoints and outputs were saved in the specified directory.
+- **Learning Rate**: Set to 5e-5, a common rate for fine-tuning large models.
+- **Epochs**: Trained over 3 epochs to ensure convergence without overfitting.
+- **Logging**: To monitor the training process, loss values were logged every 100 steps.
+- **Saving Checkpoints**: The model's state was saved every 500 steps, keeping a maximum of two checkpoints to manage memory efficiently.
+
+### Code
 ```python
 def fine_tune_model(model, dataset, tokenizer, output_dir="./results", epochs=3):
     training_args = TrainingArguments(
@@ -153,14 +172,40 @@ fine_tune_model(model, dataset, tokenizer, output_dir, epochs=3)
 
 ## Results
 
-**Optimization Log**
+The training loss decreased steadily over time, as visualized in the provided graph:
+
+The final loss settled around 0.5, showing effective learning from the Q&A dataset generated from the course transcripts.
+### Optimization Log
+
 ![training_loss](https://github.com/user-attachments/assets/072ac5eb-d953-4797-a5c0-691374e812b4)
 
-**Sample Question** 
-1. Before Training
+## Model Performance Before and After Fine-Tuning
 
-2. After Training
-![Screenshot 2024-10-03 at 9 47 24 PM](https://github.com/user-attachments/assets/1c43f7cb-deeb-4b54-b555-60141a4e6bdd)
+Here’s a comparison of the model’s performance on two sample questions before and after fine-tuning:
+
+### 1. Question: ***Why do we use CNN?***
+Before Fine-Tuning:
+```text
+Why are Convolutional Neural Networks so effective? A neural network is a collection of simple processing units. It is an approximation of biological neural networks.
+
+In biological systems, we can see the network of neurons. Each neuron is connected to other neurons through a number of axons. These neurons are responsible for processing information and making decisions. For example, the brain of a mouse is composed of 100 billion neurons, each neuron has about 50 ...
+```
+After Fine-tuning
+```text
+CNNs are used to detect visual information from raw data. They can detect local patterns in data, especially images. In the provided example, you can see the features that maximally activate neurons. The maximum to minimum curvature. What is a loss function for the neural network. It measures the difference between predicted and true values. A function measuring the model's performance. To detect the maximum, minimum, and average values in the input
+```
+
+
+### 2. Question: ***What is Reinforcement Learning?***
+Before Fine-Tuning:
+```text
+It keeps networks stronger, better interpret the model, and participate in communities. Follow communities like subreddits, like like model class, participate, models discuss Research papers, stay informed, enough, more, in the chat, or stay current on the latest conference proceedings...
+```
+After Fine-tuning:
+```text
+Reinforcement learning is a machine learning method used to predict the behavior of an agent in a complex, dynamic environment based on its past experiences. Reinforcement Learning aims to maximize the reward of the agent over the long term. A reward is defined as a positive or negative value that is given to the system for taking a certain action in the environment. The reward value of a given action is used as feedback to update the actions of that agent.
+```
+
 
 
 
