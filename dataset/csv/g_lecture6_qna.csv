@@ -1,0 +1,31 @@
+Question,Answer
+What is the main topic of this lecture?,Optimization for machine learning.
+What is gradient descent?,A method to minimize functions by following the steepest descent.
+What does L represent in optimization?,It represents the Lipschitz smooth constant.
+What is momentum in optimization?,A method to accelerate learning in low-curvature directions.
+What is the Hessian matrix?,A matrix of second-order partial derivatives.
+What is stochastic gradient descent?,Optimization using random mini-batches.
+What is a mini-batch?,A subset of training data used in SGD.
+What does Polyak averaging do?,Averages parameter values over time.
+What is the purpose of a loss function?,It measures the difference between predicted and true values.
+What is a learning rate?,The step size used in gradient updates.
+What is the purpose of trust regions?,To restrict updates to a safe region.
+What is RMSProp?,An optimization algorithm for neural networks.
+What is K-FAC?,A second-order optimizer for neural networks.
+What is a diagonal approximation?,It zeroes out all non-diagonal matrix entries.
+What does a block diagonal method do?,It groups parameters into blocks for optimization.
+What is the objective function in optimization?,It measures a model's error based on predictions.
+What are model parameters?,Values that a model learns to fit data.
+What is Lipschitz smoothness?,It ensures the gradient changes smoothly with parameters.
+What does the term 'condition number' describe?,The ratio of highest to lowest curvature.
+What is the purpose of trust regions?,"To avoid large, incorrect updates."
+What is strong convexity?,Ensures a function curves enough to optimize reliably.
+What is a quadratic approximation?,A second-order Taylor series for optimizing functions.
+What is the difference between first-order and second-order methods?,Second-order uses curvature information.
+What is a Kronecker product?,It creates larger matrices from smaller ones.
+What is second-order optimization?,It uses curvature information from the Hessian matrix.
+What is a curvature matrix?,A matrix that models how a function curves.
+What is Polyak averaging in SGD?,Averaging over previous parameter values.
+What is stochastic gradient descent with mini-batches?,It optimizes using a subset of the training data.
+What is a key benefit of second-order methods?,They eliminate the condition number dependency.
+What is Adam?,A popular optimization algorithm for neural networks.

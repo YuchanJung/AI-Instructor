@@ -1,0 +1,31 @@
+Question,Answer
+Why is responsible innovation important in AI?,"It ensures AI is safe, reliable, and beneficial to society."
+What risks arise from AI models like GPT-2?,They may reinforce biases present in the data.
+How can AI systems impact society negatively?,By amplifying biases or causing unintended harm.
+What is one challenge in ensuring AI fairness?,AI systems can inherit societal biases from data.
+Why should AI researchers consider ethical implications?,To prevent harm and ensure fairness in AI use.
+What does adversarial training aim to improve?,The robustness of AI models to adversarial attacks.
+Why is it essential for AI to follow ethical standards?,"To ensure technology benefits everyone, not just some."
+What is one risk in AI used for surveillance?,It can invade privacy and lead to misuse by bad actors.
+Why is bias in data a problem for AI systems?,It leads to unfair or harmful decisions by AI.
+How can ethical AI improve public trust?,By aligning technology with societal values and fairness.
+What is the main challenge of adversarial evaluation?,Finding the worst-case perturbations for AI testing.
+What are specification-driven machine learning techniques?,They ensure AI meets specific safety and robustness criteria.
+How can AI developers mitigate bias in models?,By diversifying training data and testing for bias.
+What are the ethical concerns with autonomous weapons?,They raise questions about human control and moral responsibility.
+How does differential privacy protect sensitive data?,It ensures that individual data points remain private during training.
+Why is transparency important in AI systems?,It allows users to understand how AI makes decisions.
+What is one key benefit of responsible AI development?,It helps avoid potential harm and maximizes societal benefits.
+What is the role of fairness in AI development?,To ensure that AI treats all groups and individuals equally.
+What challenge does AI face in dynamic environments?,Maintaining robustness when exposed to unseen conditions.
+How can policy frameworks support ethical AI?,By setting standards for responsible AI use and development.
+What is the consequence of weak adversarial evaluation?,It may give a false sense of security in AI models.
+Why is the social impact of AI crucial to evaluate?,To ensure AI does not reinforce inequality or cause harm.
+What is a key ethical principle in AI development?,To 'do no harm' and avoid violating human rights.
+How does AI affect human autonomy?,By influencing decisions and potentially limiting freedom.
+Why is it important to include diverse groups in AI development?,To ensure AI serves all users fairly and equitably.
+What are the benefits of responsible AI?,"Safer, more reliable systems that align with societal goals."
+What is informed consent in data collection?,Ensuring individuals understand and agree to data use.
+Why should AI researchers evaluate future risks?,To prevent AI misuse or unintended negative consequences.
+What is one goal of robust AI systems?,To remain reliable in the face of perturbations or attacks.
+How can AI ethics be integrated into research?,By considering social impact and adhering to ethical guidelines.

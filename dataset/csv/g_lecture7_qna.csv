@@ -1,0 +1,31 @@
+Question,Answer
+Why are deep learning models effective in NLP?,They capture complex patterns in language using neural computation.
+How does BERT improve language models?,By pretraining on vast amounts of text with unsupervised tasks.
+What tasks can transformers excel in?,"Tasks like translation, sentence classification, and text generation."
+Why is context important in language models?,It helps disambiguate word meanings and refine understanding.
+What is the significance of 'time flies like an arrow'?,It shows how context impacts sentence interpretation.
+How do words interact in a transformer model?,Through self-attention mechanisms capturing word relationships.
+What is the role of positional encoding?,It provides transformers with information about word order.
+Why is transformer superior to RNN in many cases?,"It processes words in parallel, improving efficiency."
+What is self-attention?,It calculates interactions between words to refine word embeddings.
+How does BERT's masked language model work?,It predicts missing words from a sentence during training.
+What is next sentence prediction in BERT?,It determines if two sentences are consecutive or unrelated.
+Why do some words in language have multiple senses?,Word meanings vary by context and usage.
+What challenges do non-local dependencies present?,They require models to connect distant words.
+How does a transformer handle long-range dependencies?,"Through self-attention, giving equal importance to all words."
+Why are multiple heads used in self-attention?,To capture different relationships between words.
+How does pretraining benefit BERT?,It helps the model learn general knowledge before fine-tuning.
+What is transfer learning?,Using pretrained models to improve specific tasks.
+What challenge does 'fruit flies like a banana' illustrate?,Ambiguity in sentence structure requires world knowledge.
+Why is general knowledge important in NLP models?,It helps models better interpret and predict language.
+How does BERT handle word representations?,By using distributed embeddings refined through self-attention.
+What is the importance of embeddings in NLP?,"They represent words as vectors, capturing semantic similarity."
+What is the role of softmax in transformers?,It normalizes attention scores to focus on key words.
+What benefit does fine-tuning offer BERT?,It adapts BERT to perform well on specific tasks.
+How do skip connections help in transformers?,"They allow information to bypass layers, aiding gradient flow."
+What problem does self-supervised learning solve?,It eliminates the need for labeled data in pretraining.
+How do transformers differ from traditional models?,They use attention mechanisms over fixed sequences.
+Why are non-linear activations used?,They help models capture complex relationships in data.
+How does positional encoding influence word embeddings?,It adds information about word position in a sentence.
+What are the benefits of large datasets in pretraining?,They provide extensive knowledge for better generalization.
+What is fine-tuning in the BERT model?,Adapting pretrained BERT to specific NLP tasks.

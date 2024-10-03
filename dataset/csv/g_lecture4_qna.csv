@@ -1,0 +1,31 @@
+Question,Answer
+What is the main topic of this lecture?,Advanced models for computer vision.
+Why do we need to go beyond classification?,Classification captures sparse image details.
+What percentage of information do we get visually?,80% of information comes from the eyes.
+What is object detection?,Identifying object class and location in an image.
+What is the Holy Grail of computer vision?,Achieving human-level scene understanding.
+What is pose estimation?,Detecting key points to understand object positions.
+What is instance segmentation?,Distinguishing individual objects within the same class.
+Why is bounding box detection insufficient?,It lacks precision for non-rectangular objects.
+What is RetinaNet?,A one-stage object detector with focal loss.
+What is Faster R-CNN?,A two-stage object detector using region proposals.
+What is the key difference between one-stage and two-stage detectors?,One-stage integrates classification and regression.
+What is hard negative mining?,Training with hard-to-classify negative examples.
+What is focal loss?,Loss function to focus on hard examples.
+What is semantic segmentation?,Labeling every pixel of an image with a class.
+What is U-Net?,A model for medical image segmentation using skip connections.
+What is pooling in ConvNets?,Reducing feature map resolution to increase abstraction.
+What does upsampling do?,Increases resolution of feature maps.
+What is optical flow?,Tracking pixel movement between frames.
+Why is motion important in vision?,Motion helps distinguish objects during learning.
+What is a 3D convolution?,A convolution applied over space and time in videos.
+What is action recognition?,Labeling actions in a video using temporal features.
+What does Kinetics dataset focus on?,It includes videos for action recognition.
+What are the two streams in action recognition?,"One for object category, one for motion."
+Why is transfer learning useful?,It reuses knowledge from one task for another.
+What is video segmentation?,Segmenting objects in consecutive video frames.
+What is self-supervised learning?,Learning without explicit labels using data structure.
+What is metric learning?,Learning to measure distances between data points.
+What is contrastive loss?,"Encouraging similar points to cluster, others to separate."
+What is triplet loss?,Ensures positive samples are closer than negative samples.
+What is the challenge of using videos?,High memory and computational cost.

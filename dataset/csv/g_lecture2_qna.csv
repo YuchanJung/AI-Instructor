@@ -1,0 +1,31 @@
+Question,Answer
+What is the main topic of this lecture?,Foundations of neural networks.
+How many sections are in the lecture?,There are six sections.
+What is a key motivation to learn neural nets?,To understand their usefulness.
+What hardware helped accelerate deep learning?,GPUs and TPUs.
+What is the first historical neural network mentioned?,Restricted Boltzmann machines.
+What are Hopfield networks?,An old-school type of neural network.
+What are spiking neural networks?,They mimic brain neuron behavior.
+What neural networks are used in computer vision?,Convolutional neural networks.
+What model did OpenAI recently develop?,GPT-2 for text generation.
+What is the main element of neural networks?,Matrix multiplication.
+What type of models improve with more data?,Data-hungry models.
+What are the core operations of deep learning?,Modular blocks processing data.
+Who defined deep learning as parameterized modules?,Yann LeCun.
+What is a neuron in a neural network?,A basic unit computing weighted inputs.
+What is a weighted sum in neural nets?,Inputs multiplied by weights and summed.
+What is a sigmoid function?,An activation function squashing values to 0-1.
+What is a loss function?,A function measuring model performance.
+What is cross-entropy?,A loss function for classification tasks.
+What is softmax used for?,To handle multiple classes in classification.
+What is the output of softmax?,Probabilities that sum to one.
+What is the simplest neural network task?,Binary classification.
+What is a hidden layer?,A layer between input and output layers.
+What is XOR in neural networks?,A problem requiring more complex models.
+What is ReLU?,An activation function passing positive inputs.
+What does gradient descent do?,Minimizes loss by adjusting weights.
+What is overfitting?,When a model performs well on training but poorly on test data.
+What is the purpose of regularization?,To prevent overfitting.
+What is dropout?,Randomly deactivating neurons during training.
+What is stochastic gradient descent?,An optimization technique using mini-batches.
+What is modularity in neural networks?,Building networks from simple blocks.

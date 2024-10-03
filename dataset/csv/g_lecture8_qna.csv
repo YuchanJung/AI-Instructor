@@ -1,0 +1,31 @@
+Question,Answer
+Why is attention critical in deep learning models?,It allows focus on relevant data.
+How do neural networks develop implicit attention?,By becoming sensitive to parts of the input.
+What is the cocktail party problem?,It's focusing on one voice in a noisy room.
+Why is attention more about ignoring than focusing?,It's about filtering out irrelevant data.
+How is memory related to attention in deep learning?,Memory is attention through time.
+What does a Jacobian matrix represent?,It shows sensitivity of network outputs to inputs.
+How can Jacobian analysis reveal attention?,It measures sensitivity to data points.
+Why do reinforcement learning models use attention?,To focus on actions that maximize rewards.
+What does explicit attention enable?,It reduces unnecessary data processing.
+How does self-attention differ from explicit attention?,It's implicit and arises naturally in models.
+What is the benefit of soft attention?,It allows end-to-end differentiability.
+How does softmax function in attention models?,It normalizes attention weights.
+What does content-based attention do?,It compares key vectors with input data.
+Why do transformers rely heavily on attention?,They use attention to process entire sequences.
+How do transformer models implement attention?,Each sequence element attends to every other.
+What are the benefits of attention mechanisms?,They improve focus and computational efficiency.
+What is associative attention?,Attention based on data content similarity.
+How does BERT use attention?,To pretrain and capture relationships between words.
+Why is hard attention harder to train?,It requires reinforcement learning techniques.
+How does soft attention simplify training?,It allows backpropagation.
+What makes explicit attention computationally efficient?,It only processes relevant data.
+What is introspective attention?,Attention to internal memory or thoughts.
+How do neural networks use introspective attention?,To selectively recall from memory.
+How does the DRAW model use attention?,It applies visual filters to focus on data.
+What role do attention heads play?,They select data portions to focus on.
+Why is attention critical in machine translation?,It allows reordering of words across languages.
+What problem does location-based attention solve?,It identifies where to focus within a sequence.
+How does attention improve sequence-to-sequence tasks?,By focusing on relevant input during output.
+Why is attention important in handwriting synthesis?,It ensures correct letter formation over time.
+How does content-based attention work in graphs?,It selects key nodes to traverse complex relationships.

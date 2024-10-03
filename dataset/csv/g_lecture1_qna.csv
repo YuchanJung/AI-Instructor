@@ -1,0 +1,32 @@
+Question,Answer
+What is DeepMind's mission?,To solve intelligence and use it to solve everything else.
+What is the first case study mentioned?,AlphaGo and AlphaZero.
+What is AlphaGo?,A system that plays Go using deep learning and reinforcement learning.
+What does AlphaZero do?,"It plays games like chess, shogi, and Go via self-play learning."
+What is a key feature of human intelligence?,Its generality.
+Who inspired the concept of generality in intelligence?,Robert A. Heinlein.
+What does reinforcement learning involve?,An agent learns by interacting with the environment.
+What game did DeepMind first apply deep reinforcement learning to?,Atari games.
+What is the policy network?,A network predicting the next best move in Go or similar games.
+What does the value network do?,Evaluates how good a Go position is for winning.
+What method does AlphaZero use for training?,Self-play.
+What was AlphaGo’s historic achievement?,Beating a 9-dan professional Go player.
+How many Atari games did the agent achieve superhuman performance in?,50 games.
+What is the role of the reward in reinforcement learning?,It measures the agent’s success.
+What combination is powerful for solving interactive problems?,Deep learning and reinforcement learning.
+What are proteins?,Molecular machines that carry out functions in the body.
+What is AlphaFold?,A system that predicts protein folding using deep learning.
+How many layers does AlphaFold’s neural network have?,220 layers.
+What is CASP?,A competition to assess protein folding prediction models.
+What is the focus of convolutional neural networks?,Image recognition.
+Who pioneered convolutional neural networks?,Yann LeCun.
+What are variational autoencoders?,Models for unsupervised learning by encoding and decoding data.
+What is the purpose of generative adversarial networks?,To generate data that mimics real data.
+What kind of AI system is Stockfish?,A traditional chess AI using hand-crafted rules.
+What is procedural generation?,Generating different game maps for agents to learn.
+What does AlphaZero optimize?,Long-term reward through policy and value networks.
+What is a differentiable score function?,A function optimized by gradient descent in AlphaFold.
+What is an unsupervised learning method mentioned?,Self-supervised learning.
+What is the benefit of learning in varied maps?,It helps agents generalize strategies.
+What is the third case study in the lecture?,AlphaFold for protein structure prediction.
+What game showcases decentralized multi-agent learning?,Capture the Flag.

@@ -1,0 +1,31 @@
+Question,Answer
+What is the main focus of this lecture?,Optimization methods for machine learning.
+What is gradient descent?,A method to minimize functions by following the steepest descent.
+What are the five sections of this lecture?,"Intro, gradient descent, momentum, second-order, stochastic."
+What does optimization do in machine learning?,It helps models learn by adjusting parameters.
+What is an objective function?,It measures the error of a model's prediction.
+What are model parameters?,Values that the model learns to fit the data.
+What does L represent in this lecture?,It denotes the Lipschitz smooth constant.
+What is theta in optimization?,The parameter vector of the model.
+What does f represent in neural networks?,The function representing the neural network.
+What is a loss function?,It measures the difference between predicted and true values.
+What is the learning rate?,The step size used in gradient updates.
+What does a gradient represent?,The direction of steepest descent in a loss surface.
+What is momentum in optimization?,A method to accelerate learning in low-curvature directions.
+What does second-order method use?,It uses curvature information via the Hessian matrix.
+What is the Hessian?,A matrix of second-order partial derivatives.
+What is stochastic gradient descent (SGD)?,An optimization method using random mini-batches.
+What is Polyak averaging?,A method that averages parameter values over time.
+What is a mini-batch?,A subset of the training data used in SGD.
+What is overfitting?,"When a model fits the training data too well, losing generalization."
+What is a trust region?,A constraint on the step size in second-order methods.
+What does Lipschitz smoothness ensure?,Gradients change smoothly across parameter space.
+What is the condition number?,The ratio of maximum to minimum curvature.
+What is K-FAC?,An advanced second-order optimizer for neural networks.
+What is a common problem with SGD?,It can have noisy gradient estimates.
+What is a key feature of second-order methods?,They account for curvature to improve convergence.
+What is strong convexity?,A condition ensuring sufficient curvature for optimization.
+What is the advantage of momentum?,It reduces oscillation in the optimization path.
+What are block diagonal methods?,Methods that approximate the Hessian in smaller blocks.
+What is Adam?,A popular adaptive learning rate optimization algorithm.
+What is the goal of optimization?,To minimize the objective function as efficiently as possible.

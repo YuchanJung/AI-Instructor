@@ -1,0 +1,31 @@
+Question,Answer
+What are latent variable models used for?,They model hidden or unobserved factors explaining data.
+Why is variational inference important?,It approximates intractable posteriors for efficient learning.
+How are generative models different from other probabilistic models?,They model high-dimensional output distributions.
+What is the role of latent variables in models?,They help explain observed data by introducing hidden factors.
+Why are invertible models appealing?,They allow for exact inference and efficient sampling.
+What is the goal of autoregressive models?,They break down joint distributions into conditional subproblems.
+Why is inference crucial in latent variable models?,It estimates posterior distributions of latent variables.
+What challenge does variational inference solve?,It addresses intractable posterior distributions in complex models.
+How do variational autoencoders relate to latent models?,They use variational inference to train with continuous latent variables.
+What is mode collapse in GANs?,It happens when the model only generates a subset of the data distribution.
+Why are exact inference methods intractable?,Because integration over high-dimensional latent variables is computationally expensive.
+What are mixture models?,Models using latent variables to represent data as a combination of components.
+How does amortised inference help?,It speeds up variational inference by using a neural network.
+Why is the reparameterization trick used?,It simplifies gradient estimation in variational inference.
+What is the KL divergence used for in inference?,To quantify the difference between two probability distributions.
+What is the Evidence Lower Bound (ELBO)?,It is the objective function maximized in variational inference.
+How does variational inference work?,It approximates the true posterior by optimizing a simpler distribution.
+What is the purpose of invertible models?,They allow exact inference by transforming a prior distribution.
+Why are latent variable models challenging?,Because computing exact posteriors is often intractable.
+What is the importance of sampling in generative models?,It helps generate realistic data points from learned distributions.
+How does the reparameterization trick help training?,It enables efficient gradient computation in variational inference.
+What is variational pruning?,The model stops using some latent variables to simplify inference.
+Why are invertible models computationally efficient?,Because they allow fast generation with exact inference.
+How do flow-based models work?,They apply invertible transformations to latent variables to match data distribution.
+What role does the Jacobian play in invertible models?,It accounts for volume change during the transformation from latent space.
+Why are variational autoencoders powerful?,They scale well and efficiently handle continuous latent variables.
+What makes autoregressive models effective?,They break joint distributions into easy-to-model conditional distributions.
+Why do we maximize the ELBO in variational inference?,It provides a lower bound on the marginal log-likelihood.
+What is a posterior collapse?,"When the model does not use all latent variables, making inference easier."
+How do mixture models combine latent variables?,They combine data from different sources using weighted components.

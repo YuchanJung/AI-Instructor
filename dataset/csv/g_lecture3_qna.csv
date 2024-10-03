@@ -1,0 +1,31 @@
+Question,Answer
+What is the main topic of this lecture?,ConvNets for image recognition.
+What are ConvNets?,Neural networks using convolution operations for images.
+What is a key property of ConvNets?,They can detect local patterns in images.
+What are the two key properties of images?,Locality and translation invariance.
+What problem does translation cause for neural networks?,Shifted objects lead to different outputs.
+What does weight sharing do?,It allows the same pattern detection across images.
+What is the receptive field?,The part of the image a unit can see.
+What are feature maps?,Outputs of the convolutional operation in ConvNets.
+What does pooling do?,Reduces resolution of feature maps.
+What is a strided convolution?,Convolution that skips steps to reduce computation.
+What is a dilated convolution?,Increases receptive field by skipping filter values.
+What is the AlexNet model known for?,A breakthrough ConvNet for image classification.
+What was a key feature of AlexNet?,Use of ReLU nonlinearity and dropout.
+What did ResNet introduce?,Residual connections to enable deeper networks.
+What is the ImageNet challenge?,A competition to classify 1.4 million images.
+What is a SoftMax function?,It converts outputs to probabilities.
+What are bottleneck blocks in ResNet?,Blocks that reduce parameters with smaller convolutions.
+What is GoogLeNet known for?,Inception modules combining multiple convolutions.
+What did VGGNet focus on?,Using 3x3 convolutions throughout the network.
+What did the introduction of batch norm achieve?,Faster training and reduced sensitivity to initialization.
+What is data augmentation?,Applying transformations to training images.
+What do generative models do?,Generate new images from learned data distributions.
+What does feature visualization show?,Patterns a ConvNet learns at each layer.
+What is self-supervised learning?,Learning features from unlabeled data.
+What is a depth-wise convolution?,A convolution where each channel is processed separately.
+What are separable convolutions?,Combining depth-wise and regular convolutions.
+What is neural architecture search?,Automatically finding the best ConvNet architecture.
+What are inverted bottlenecks?,Blocks that expand channels for spatial integration.
+What is global context in ConvNets?,Incorporating overall image information into features.
+What is the key idea of transfer learning?,Reusing ConvNet features for new tasks.
