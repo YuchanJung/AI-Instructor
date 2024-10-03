@@ -165,7 +165,7 @@ fine_tune_model(model, dataset, tokenizer, output_dir, epochs=3)
 
 The training loss decreased steadily over time, as visualized in the provided graph:
 
-The final loss settled around 0.5, showing effective learning from the Q&A dataset generated from the course transcripts.
+The final loss settled around 0.5, showing effective learning from the Q&A dataset
 ### Optimization Log
 
 ![training_loss](https://github.com/user-attachments/assets/072ac5eb-d953-4797-a5c0-691374e812b4)
@@ -175,24 +175,24 @@ The final loss settled around 0.5, showing effective learning from the Q&A datas
 Here’s a comparison of the model’s performance on two sample questions before and after fine-tuning:
 
 ### 1. Question: ***Why do we use CNN?***
-Before Fine-Tuning:
+**Before Fine-Tuning:**
 ```text
 Why are Convolutional Neural Networks so effective? A neural network is a collection of simple processing units. It is an approximation of biological neural networks.
 
 In biological systems, we can see the network of neurons. Each neuron is connected to other neurons through a number of axons. These neurons are responsible for processing information and making decisions. For example, the brain of a mouse is composed of 100 billion neurons, each neuron has about 50 ...
 ```
-After Fine-tuning
+**After Fine-tuning:**
 ```text
 CNNs are used to detect visual information from raw data. They can detect local patterns in data, especially images. In the provided example, you can see the features that maximally activate neurons. The maximum to minimum curvature. What is a loss function for the neural network. It measures the difference between predicted and true values. A function measuring the model's performance. To detect the maximum, minimum, and average values in the input
 ```
 
 
 ### 2. Question: ***What is Reinforcement Learning?***
-Before Fine-Tuning:
+**Before Fine-Tuning:**
 ```text
 It keeps networks stronger, better interpret the model, and participate in communities. Follow communities like subreddits, like like model class, participate, models discuss Research papers, stay informed, enough, more, in the chat, or stay current on the latest conference proceedings...
 ```
-After Fine-tuning:
+**After Fine-tuning:**
 ```text
 Reinforcement learning is a machine learning method used to predict the behavior of an agent in a complex, dynamic environment based on its past experiences. Reinforcement Learning aims to maximize the reward of the agent over the long term. A reward is defined as a positive or negative value that is given to the system for taking a certain action in the environment. The reward value of a given action is used as feedback to update the actions of that agent.
 ```
